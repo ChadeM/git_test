@@ -1,0 +1,169 @@
+ 
+
+body{
+    font-size: 13px;
+    color: #696969;
+    font-family: arial,sans-serif;
+}
+
+/*** NAV BAR ***/
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+   
+li{
+    float: left;
+    padding: 0px 7px 0px 0px;
+    margin: 0.5%;
+    
+}
+
+  .right{
+    float: right;
+}
+
+
+li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+}
+
+li.signin:hover{
+    text-decoration: none;
+    cursor: default;
+}
+
+li.signin{
+    border: 1px solid #4885ed;
+    background-color: #4885ed;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 11px;
+     
+}
+
+
+/*** CENTER ***/
+
+.google_logo{
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  padding-top: 112px;
+  padding-bottom: 20px;
+}
+
+ 
+
+input{
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+    height: 37px;
+    border: 1px solid #f1f1f1;
+    padding: 1px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 2px 3px 7px 0 rgba(0, 0, 0, 0.19);
+   
+  
+}
+ 
+#wrapper{
+    
+   margin: 0 auto;
+   text-align: center;
+  
+}
+
+ .lucky, .search{
+    margin: 15px 2px;
+    display:  inline-block;
+    border: 1px solid #ededed;
+    background-color: #ededed;
+    padding: 8px 22px;
+      
+}
+
+ 
+ 
+
+.search:hover , .lucky:hover{
+    color: black;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #bdbdbd;
+}
+
+input:hover{
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,0.24),0 0 20px 0 rgba(0,0,0,0.19);
+}
+
+input, select, textarea{
+    color: #ff0000;
+}
+
+ 
+
+/*** FOOTER ***/
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f1f1f1;
+   height: 50px;
+}
+
+/*** MEDIA QUERIES ***/
+
+@media screen and (max-width: 1080px){
+        input{
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 700px){
+        input{
+        width: 60%;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    
+    input{
+        width: 80%;
+    }
+    
+    img.google_logo{
+        width: 150px;
+        height: 50px;
+    }
+    
+    .lucky, .search{
+        
+    padding: 5px 20px;
+      
+}
+    
+    ul li{
+        float: none;
+        display: inline;
+        margin: 0px
+    }
+    
+    li.right{
+        float: none;
+        display: inline;
+        
+    }
+    
+ li.signin{
+        display: none;
+    }
+ 
+}
+
+ 
